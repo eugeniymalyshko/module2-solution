@@ -1,1 +1,89 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+	background-color: #ffffff;
+}
+div {
+	display: block;
+}
+/*********** Desktop version ***********/
+#main {
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	max-width: 1140px;
+	margin-top: 15%;
+	margin-right: auto;
+	margin-left: auto;
+}
+h1 {
+	text-align: center;
+}
+.container {
+	display: block;
+	width: 32%;
+	float: left;
+	margin: 5px;
+	background-color: #C0C0C0;
+	margin-top: 30px;
+}
 
+h3 {
+	border: solid black 1px;
+	float: right;
+	padding: 5px 20px 5px 20px;
+	margin: 2px 2px 0 0;
+
+}
+.chicken {
+	background-color: red;
+}
+.beef {
+	background-color: green;
+	color: #ffffff;
+}
+.sushi {
+	background-color: violet;
+}
+p {
+	border: solid black 3px;
+	padding: 35px 5px 5px 5px;
+}
+
+/*********** Tablet version ***********/
+@media (min-width: 768px) and (max-width: 967px) {
+
+	#main {
+		max-width: 960px;
+	}
+	.d1 {
+		width: 48%;
+		margin-right: 12px;
+	}
+	.d2 {
+		width: 48%;
+	}
+	.d3 {
+		clear: left;
+		width: 98%;
+		margin-top: 12px;
+	}
+}
+/*********** Mobile version ***********/
+@media (max-width: 767px) {
+	
+	#main {
+		padding-left: 20px;
+		padding-right: 20px;
+		max-width: 720px;
+		margin-top: 15px;
+	}
+	.container {
+		width: 100%;
+		margin: 5px;
+	}
+}
